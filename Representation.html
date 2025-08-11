@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Author: Solange Mihanda Muhima
+    Date: March 25 2025
+    File Name: representation.html
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next. Talent Agency</title>
+    <link rel="icon" type="image/png" href="images/LogoNext.png">
+    <link rel="stylesheet" href="StyleSheet3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="mobile-container">
+        <div class="logo">
+        <img src="images/LogoNext.png" alt="Next.Talent Agency Logo">
+        </div>
+
+        <div class= "topnav">
+            <div id ="myLinks">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="Representation.html">Representation</a>
+            <a href="booking.html">Booking</a>
+            <a href="reviews.html">Reviews</a>
+            <div class="search-container">
+                <form action="/action_page.php">
+                  <input type="text" placeholder="Search.." name="search">
+                  <button type="submit" onclick="Display(this)">
+                    <img src="images/search.0dafd02b.svg" alt="Search Icon">
+                  </button>
+                  <script>
+                    function Display(object){
+                        alert("We are still working on the search bar.No link is available yet");
+                    }
+                </script>
+                </form>
+              </div>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
+            <script>
+                function myFunction() {
+                  var x = document.getElementById("myLinks");
+                  if (x.style.display === "block") {
+                    x.style.display = "none";
+                  } else {
+                    x.style.display = "block";
+                  }
+                }
+             </script>
+        </div>
+    </header>
+
+    <div class="representation">
+      <img src="images/pexels-tima-miroshnichenko-6693363.jpg" alt="Notebook" style="width:100%;">
+      <div class="content">
+        <h1>Representation</h1>
+      </div>
+    </div>
+  
+<div class="text">
+  
+  <h1>Advancing The Carreers Of Global Superstars!</h1>
+  <p >
+    At <strong>Next. Talent Agency</strong>, we are passionate about propelling the world’s most promising talents to the top of their industries. From actors and musicians to models and athletes, we provide strategic representation, personalized branding, and global exposure. Our mission is to elevate every career with creativity, innovation, and unmatched professionalism, ensuring our clients shine brighter on every stage, screen, or platform they step onto.
+  </p>
+</div>
+<!-- Responsive image Gallery-->
+<div class="gallery-row">
+  <a href="actors.html" class="gallery-item">
+    <img src="images/Actors/pexels-pete79-29056595.jpg" alt="Actors">
+    <div class="caption">Actors</div>
+  </a>
+  <a href="musicians.html" class="gallery-item">
+    <img src="images/Musicians/pexels-pixabay-210766.jpg" alt="Musicians">
+    <div class="caption">Musicians</div>
+  </a>
+  <a href="models.html" class="gallery-item">
+    <img src="images/Models/pexels-philboakye-1813947.jpg" alt="Models">
+    <div class="caption">Models</div>
+  </a>
+  <a href="athletes.html" class="gallery-item">
+    <img src="images/Athletes/pexels-pixabay-159574.jpg" alt="Athletes">
+    <div class="caption">Athletes</div>
+  </a>
+</div>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        
+          
+            <p>
+            Powered by &copy; 2025 Next. Talent Agency. All rights reserved.
+            </p>
+    </footer>
+</body>
+</html>

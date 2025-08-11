@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+      <!--Author: Solange Mihanda Muhima
+    Date: March 25 2025
+    File Name: booking.html
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next. Talent Agency</title>
+    <link rel="icon" type="image/png" href="images/LogoNext.png">
+    <link rel="stylesheet" href="stylesheet2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">
+            <img src="images/LogoNext.png" alt="Next. Talent Agency Logo">
+        </div>
+        
+        <div class= "topnav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="Representation.html">Representation</a>
+            <a href="booking.html">Booking</a>
+            <a href="reviews.html">Reviews</a>
+            <div class="search-container">
+                <form action="/action_page.php">
+                  <input type="text" placeholder="Search.." name="search">
+                  <button type="submit" onclick="Display(this)">
+                    <img src="images/search.0dafd02b.svg" alt="Search Icon">
+                  </button>
+                  <script>
+                    function Display(object){
+                        alert("We are still working on the search bar.No link is available yet");
+                    }
+                </script>
+                </form>
+              </div>
+            <div class="bar-container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>   
+        </div>
+        
+        <script>
+            function myFunction(x) {
+              x.classList.toggle("change");
+            }
+            </script>
+    </header>
+    
+ <section class="Booking">
+    <blockquote>
+    <h2>Book Top Talent for Your Next Project!</h2>
+    <p>Whether you’re casting for a commercial, film, runway show, or live event, our diverse roster of exceptional talent is ready to deliver. Fast, professional, and tailored to your needs— <strong>book with confidence and make your project stand out.</strong></p>
+    <p>Secure top talent today! Let’s create something unforgettable.</p>
+</blockquote>
+ </section>
+
+ <div class="container">
+
+    <div class="icon-bar">
+        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+        <a href="#" class="google"><i class="fa fa-google"></i></a> 
+        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+      </div>
+
+    <!-- Booking Section -->
+   <div class="forms-container">
+    <div class="booking-form">
+        <h2>Book a Talent</h2>
+        <p>Fill out the form to book top talent for your project!</p>
+        <form action="booking-process.php" method="POST">
+            <label for="name">Enter your Name:</label>
+            <input type="text" id="name" name="name" required onblur="changeForm()">
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required onblur="changeColor(this)">
+            <script>
+                function changeForm(){
+                    //this is referencing the fname object of the textbox
+                    var txtObj = document.getElementById("name");
+                    //when onblur occurs change the value to upper case
+                    txtObj.value = txtObj.value.toUpperCase();
+                }
+                function changeColor(objRef){
+                    //objRef is the textBox object, change background to yellow
+                    objRef.style.background ="lightblue";
+                }
+        
+            </script>
+            <label for="talent">Talent Type:</label>
+            <select id="talent" name="talent">
+                <option value="actor">Actor</option>
+                <option value="model">Model</option>
+                <option value="musician">Musician</option>
+                <option value="Athletes">Athletes</option>
+            </select>
+
+            <button type="submit" onclick="myFunction(this)"> Book Now </button>
+            <script>
+                function myFunction(display){
+                    alert("Sorry, the link to the ‘Book a Talent’ page has not been created yet");
+                }
+            </script>
+        </form>
+    </div>
+</div>
+
+    <!-- Login Section -->
+    <div class="forms-container">
+    <div class="login-form">
+        <h2> Talent Login</h2>
+        <p>Already registered? Log in to access your profile.</p>
+        <form action="login-process.php" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required onblur="changeForm2()">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required onblur="changeColor2(this)">
+            <script>
+                function changeForm2(){
+                    //this is referencing the fname object of the textbox
+                    var txtObj = document.getElementById("username");
+                    //when onblur occurs change the value to upper case
+                    txtObj.value = txtObj.value.toUpperCase();
+                }
+                function changeColor2(objRef){
+                    //objRef is the textBox object, change background to yellow
+                    objRef.style.background ="lightblue";
+                }
+            </script>
+            
+            <button type="submit" onclick="myDisplay(this)">Login</button>
+            <script>
+                function myDisplay(objRef){
+                    alert("Sorry, the link to the 'Talent Login' page has not been created yet");
+                }
+            </script>
+        </form>
+    </div>
+</div>
+</div>
+
+    <!-- Footer -->
+    <footer class="footer">
+            <p>
+            Powered by &copy; 2025 Next. Talent Agency. All rights reserved.
+            </p>
+    </footer>
+
+</body>
+</html>

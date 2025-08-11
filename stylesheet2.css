@@ -1,0 +1,363 @@
+@charset "utf-8";
+/* Author: Solange Mihanda Muhima
+Date: March 25 2025
+File name: StyleSheet2
+*/
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+    color: #333;
+    text-align: center;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #223;
+    padding: 10px 0;
+}
+
+.logo {
+    padding: 20px;
+    background-color: rgb(245 245 243/var(--tw-bg-opacity,1));
+}
+.logo img {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Create a top navigation bar with a black background color  */
+.topnav {
+    background-color: #223;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px 15px;
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  /*search bar */
+  .topnav .search-container {
+    float: right;
+    margin-top: 10px;
+    margin-right: 7px;
+  }
+  
+  .topnav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+  }
+  
+  .topnav .search-container button {
+    float: right;
+    padding: 4px 10px;
+    margin-top: 8px;
+    margin-right: auto;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .topnav .search-container button:hover {
+    background: lightblue;
+  }
+  .search-container button img {
+    width: auto;  
+    height:auto;
+    
+    
+}
+  @media screen and (max-width: 600px) {
+    .topnav .search-container {
+      float: none;
+    }
+    .topnav a, .topnav input[type=text], .topnav .search-container button {
+    
+      display: block;
+      text-align: left;
+      width: 90%;
+      margin: 0;
+      padding: 0px;
+    }
+    .topnav input[type=text] {
+      border: 2px solid #ccc;  
+    }
+  }
+
+  div.container {
+      display: flex;
+      align-items: center;/* Align items vertically */
+      justify-content: start;/* Align to the left */
+      gap: 150px;/* Space between icon bar and table */
+      padding: 20px;
+    }
+  
+/* Vertical Social Media Bar */
+.icon-bar {
+  display: flex;
+  flex-direction: column;/* Vertical Social Media Bar */
+
+}
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+  width:45px;
+  right: 0;
+}
+
+.icon-bar a:hover {
+  background-color: #333;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.content {
+  margin-left: 5px;
+  font-size: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    margin-top: 50px;
+    padding-top: 20px;
+
+}
+
+.booking-form, .login-form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+   
+}
+
+h2 {
+    color: #222;
+}
+
+ div.booking-form input, select {
+    width: 90%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 20px;
+    left:100px;
+}
+div.login-form input{
+    width: 90%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 43px;
+
+}
+
+div.booking-form button {
+    background: #222;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+
+}
+div.login-form button {
+    background: #222;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* ===============================
+   Mobile Styles: 0px to 480px 
+   ===============================
+*/
+@media only screen and (max-width: 480px) {
+
+  
+  .caption {
+    top: 700px;
+  }
+  a.icon {
+   visibility:visible;
+   
+  }
+  .logo {
+    padding: 5px;
+  }
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+  
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .search-container form {
+    width: 30%;
+  }
+  .search-container img {
+  display: none;
+  }
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .icon-bar {
+    display: none;
+  }
+ .container {
+    flex-direction: column;
+  }
+ 
+  .forms-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+  }
+  .booking-form {
+    padding: 10px;
+    flex: 50%;
+
+  }
+  .login-form {
+  padding: 10px;
+  flex: 50%; 
+  }
+
+  .footer {
+    background-color: #223;
+    color: wheat;
+    width: 100%;
+    padding: 3px;
+    margin-top: 100px;
+}
+}
+  /*closing curly brace for mobile media query*/
+  
+  /* ================================
+     Tablet Styles: 481px and greater 
+     ================================
+  */
+
+  @media only screen and (min-width: 481px){
+
+  
+    .topnav .container{
+      width: 100%;
+     }
+
+     .footer {
+      background-color: #223;
+      color: wheat;
+      width: 100%;
+      padding: 3px;
+    
+  
+  }
+}
+  /* =================================
+     Desktop Styles: 769px and greater
+     =================================
+  */
+  @media only screen and (min-width: 769px){
+   
+  
+    .hero {
+      box-shadow: rgb(51,51,51) 5px 5px 5px;
+      box-shadow: none;
+      width: 100%;
+      border-radius: 0.2em;
+     }
+     .icon {
+      display: none;
+     }
+     .footer {
+      background-color: #223;
+      color: wheat;
+      padding: 3px;
+      margin-top: 100px;
+  }
+}
+
+

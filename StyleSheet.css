@@ -1,0 +1,497 @@
+@charset "utf-8";
+/* Author: Solange Mihanda Muhima
+Date: March 25 2025
+File name: StyleSheet
+*/
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height:2000px;
+    padding: 0;
+    background-color: aliceblue;
+    color: #333;
+    text-align: center;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #223;
+    padding: 10px 0;
+}
+
+.logo {
+    padding: 20px;
+    background-color: rgb(245 245 243/var(--tw-bg-opacity,1));
+}
+.logo img {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Create a top navigation bar with a black background color  */
+.topnav {
+  
+    background-color: #223;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px 15px;
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  /*search bar */
+  .topnav .search-container {
+    position: sticky;
+    float: right;
+    margin-top: 10px;
+    margin-right: 7px;
+
+  }
+  
+  .topnav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+  }
+  
+  .topnav .search-container button {
+    float: right;
+    padding: 4px 10px;
+    margin-top: 8px;
+    margin-right: auto;
+    background: #ddd;
+    font-size: 17px;
+     border: none;
+    cursor: pointer;
+  }
+  
+  .topnav .search-container button:hover {
+    background: lightblue;
+  }
+  .search-container button img {
+    width: auto;  
+    height:auto;
+    
+    
+}
+  @media screen and (max-width: 600px) {
+    .topnav .search-container {
+      float: none;
+    }
+    .topnav a, .topnav input[type=text], .topnav .search-container button {
+    
+      display: block;
+      text-align: left;
+      width: 90%;
+      margin: 0;
+      padding: 0px;
+    }
+    .topnav input[type=text] {
+      border: 2px solid #ccc;  
+    }
+  }
+  
+.parallax {
+    background-image: url(images/imagewoman.webp);
+    min-height: 400px;
+    /*create the parallax scrolling effect*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.caption {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2em;
+    border: 3px solid black;
+    color: black;
+    border-style:double;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*transparent text*/
+    background: rgba(0, 0,0,0.5);
+    color: #f1f1f1;
+    width: 97.3%;
+    padding: 20px;
+   
+    
+}
+/* Hero Section */
+section.hero {
+   /* background: url('images.jpeg') no-repeat center center/cover;*/
+    height: 50vh;
+    width:97.4%;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: beige;
+    animation: mymove 5s infinite;
+}
+      
+ @keyframes mymove {
+    from {background-color: lightblue;}
+    to {background-color: darkslateblue;}
+     }
+
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.5em;
+}
+
+.cta {
+    background: black;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Sections */
+
+h2 {
+    font-size: 2em;
+}
+section.about {
+    background-color: #223;
+    color: white;
+    padding: 60px 20px;
+    
+}
+
+div#talent {
+  background-color: #223;
+  color: white;
+  display: flex;
+  align-items: center;/* Align items vertically */
+  justify-content: start;/* Align to the left */
+  gap: 20px;/* Space between icon bar and table */
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* Vertical Social Media Bar */
+.icon-bar {
+  display: flex;
+  flex-direction: column;/* Vertical Social Media Bar */
+}
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+  width:45px;
+}
+
+.icon-bar a:hover {
+  background-color: #333;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.content {
+  margin-left: 5px;
+  font-size: 30px;
+}
+
+
+/* Table */
+table {
+    width: 80%;
+    height: 50vh;
+    background-color: rgb(245 245 243/var(--tw-bg-opacity,1));
+    backdrop-filter: blur(7px);
+    box-shadow: 0 .4rem .8rem #0005;
+    border-radius: .8rem;
+    border-collapse: collapse;
+    margin-left: 150px;
+  
+}
+thead th{
+padding:10px;
+border: 2px solid #ddd;
+font-size: 1.6em;
+
+}
+
+tr, td {
+  
+    width: 50%;
+    height: 10%;
+    padding: .5rem 0rem;
+    color: goldenrod;
+    
+}
+
+table tr:nth-child(even){
+    background-color:#223;
+    color: wheat;
+    
+}
+table tr:hover {
+    background-color:rgb(34, 111, 111);
+    
+    color: wheat;
+}
+
+/* Video */
+video {
+    width: 100%;
+    max-width: 950px;
+    margin: 20px auto;
+    display: block;
+}
+
+/* Image Gallery */
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+/* Styling for Each Figure (Image + Caption) */
+.image-gallery figure {
+    display: flex;
+    flex-direction: column; /*Ensures caption stay below*/
+    align-items: center;
+    text-align: center;
+    width: 250px; /* Adjust this width to match your images */
+    margin:0;
+}
+/* Styling for Images */
+.image-gallery img {
+    width: 100%;
+    height: 25vh;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+/* Image Hover Effect */
+.image-gallery img:hover {
+    transform: scale(1.1);
+}
+/* Styling for Captions */
+.image-gallery figcaption {
+    font-size: 16px;
+    color:black;
+    margin-top: 5px;
+    font-style: italic;
+    text-align: center;
+}
+
+
+
+
+/*New Styles Added Below */
+
+/* ===============================
+   Mobile Styles: 0px to 480px 
+   ===============================
+*/
+@media only screen and (max-width: 480px) {
+
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 300px;
+  color: white;
+  border-radius: 10px;
+}
+
+.caption {
+  top: 700px;
+}
+a.icon {
+ visibility:visible;
+ 
+}
+.logo {
+  padding: 5px;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.search-container form {
+  width: 30%;
+}
+.search-container img {
+display: none;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+div#talent {
+  background-color: #223;
+  color: white;
+  display: flex;
+  align-items: center;/* Align items vertically */
+  justify-content: start;/* Align to the left */
+  gap: 0px;/* Space between icon bar and table */
+  padding:0px;
+}
+table {
+  width: 65%;
+  height: 50vh;
+  background-color: rgb(245 245 243/var(--tw-bg-opacity,1));
+  backdrop-filter: blur(7px);
+  box-shadow: 0 .4rem .8rem #0005;
+  border-radius: .8rem;
+  border-collapse: collapse;
+  margin-left: 70px;
+  padding: 5px;
+
+}
+
+tr, td {
+
+  width: 50%;
+  height: 10%;
+  padding: .5rem 0rem;
+  color: black;
+}
+.hero {
+  box-shadow: rgb(51,51,51) 5px 5px 5px;
+    position: absolute;
+    background-position: center;
+    width: 160%;
+    margin-right: 20%;
+}
+
+}
+
+/*closing curly brace for mobile media query*/
+
+/* ================================
+   Tablet Styles: 481px and greater 
+   ================================
+*/
+@media only screen and (min-width: 481px){
+    
+  .topnav {
+    width: 100%;
+   }
+
+  .hero{
+      box-shadow: rgb(51,51,51) 5px 5px 5px;
+      position: absolute;
+      width: 210%; 
+   }
+   
+   foot.container{
+    background-color:#223;
+    box-shadow: none;
+    display: block;
+    width: 100%;
+   }
+
+  
+
+}
+
+/* =================================
+   Desktop Styles: 769px and greater
+   =================================
+*/
+@media only screen and (min-width: 769px){
+ 
+
+  .hero {
+    box-shadow: rgb(51,51,51) 5px 5px 5px;
+    box-shadow: none;
+    width: 100%;
+    border-radius: 0.2em;
+   }
+   .icon {
+    display: none;
+   }
+  }
+
+/* Footer */
+.footer {
+    background-color: #223;
+    color: wheat;
+    padding: 3px;
+}

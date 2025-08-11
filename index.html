@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Author: Solange Mihanda Muhima
+    Date: March 25 2025
+    File Name: index.html
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next. Talent Agency</title>
+    <link rel="icon" type="image/png" href="images/LogoNext.png">
+    <link rel="stylesheet" href="StyleSheet.css"  type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"  type="text/css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="mobile-container">
+        <div class="logo">
+        <img src="images/LogoNext.png" alt="Next.Talent Agency Logo">
+        </div>
+
+        <div class= "topnav">
+          <!-- <div id ="myLinks">--> 
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="Representation.html">Representation</a>
+            <a href="booking.html">Booking</a>
+            <a href="reviews.html">Reviews</a>
+            <div class="search-container">
+                <form action="/action_page.php">
+                  <input type="text" placeholder="Search.." name="search">
+                  <button type="submit" onclick="Display(this)">
+                    <img src="images/search.0dafd02b.svg" alt="Search Icon">
+                  </button>
+                  <script>
+                    function Display(object){
+                        alert("We are still working on the search bar.No link is available yet");
+                    }
+                </script>
+                </form>
+              </div>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
+       <script>
+                function myFunction() {
+                  var x = document.getElementById("myLinks");
+                  if (x.style.display === "block") {
+                    x.style.display = "none";
+                  } else {
+                    x.style.display = "block";
+                  }
+                }
+             </script>
+        
+    </header>
+    
+    <!-- Hero Section with Animation -->
+   <div class = "parallax"></div>
+
+    <div class ="caption">
+        <span class="border">We Bring Your Future To You!</span>
+    </div>
+   
+
+    <section class="hero">
+        <h1>Welcome </h1>
+         <h1> to </h1>
+        <h1><strong>Next. Talent Agency</strong></h1>
+        <p>Representing the best talent worldwide.</p>
+        <a href="#talent" class="cta">Discover Talent</a>
+    </section>
+    <div class ="parallax"></div>
+    
+    <div class ="parallax"></div>
+   
+    <!-- About Section -->
+    <section class="about">
+        <h2>About Us</h2>
+        <p>Next. Talent Agency specializes in representing top-tier talent in acting, modeling, music, and sports. Our mission is to bring exceptional talent to the forefront of the entertainment industry.</p>
+    </section>
+
+    <!-- Talent Showcase (Table) -->
+    <div class="parallax"></div>
+    <div id="talent">
+        <div class="icon-bar">
+            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+            <a href="#" class="google"><i class="fa fa-google"></i></a> 
+            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+          </div>
+          
+        <table class="table">
+            <thead>
+                <tr>
+            <th colspan ="2"><strong>Meet Our Talent</strong></th>
+                 </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th>Category</th>
+                <th>Top Talent</th>
+            </tr>
+            <tr>
+                <td>Actors</td>
+                <td>Robert Pattison, Emma Stone</td>
+            </tr>
+            <tr>
+                <td>Models</td>
+                <td>Jane Smith, Alex Turner</td>
+            </tr>
+            <tr>
+                <td>Musicians</td>
+                <td>Mike Jones, Sarah Lee</td>
+            </tr>
+            <tr>
+                <td>Athletes</td>
+                <td>Chris Evans, Lisa Taylor</td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+    <div class="parallax"></div>
+    
+    
+    <!-- Media Section -->
+    
+    <section id="media">
+        <h2>Watch Our Talent in Action</h2>
+        <video controls>
+            <source src="saveinsta.cc_1080p-la-la-land-2016-movie-official-trailer-dreamers.mp4" type="video/mp4">
+           <!--Your browser does not support the video tag.--> 
+        </video>
+       
+        <div class="image-gallery">
+            <figure>
+            <a target="_blank" href="img_5terre.jpg">
+            <img src="images/service2.jpg" alt="Talent Image 1">
+        </a>
+            <figcaption>Our Services</figcaption>
+            
+        </figure>
+        <figure>
+            <a target="_blank" href="reviews.html">
+            <img src="images/testimonials.jpg" alt="Talent Image 2">
+        </a>
+            <figcaption>Clients Testimonials</figcaption>
+          
+        </figure>
+        <figure>
+            <a target="booking.html" href="booking.html">
+            <img src="images/booking1.webp" alt="Talent Image 3">
+        </a>
+            <figcaption>Booking</figcaption>
+           
+          </figure>
+        </div>
+        
+    </section>
+  
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <p>Email: info@nexttalent.com</p>
+        <p>Phone: +1 (555) 123-4567</p>
+        <p>Follow us on social media for the latest updates!</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        
+              <!--
+            <img src="images/fb_icon2-icons.webp" alt="facebook">
+            <img src="images/social_Pinterest_8.png" alt="pinterest">
+            <img src="images/twitter_x_new_logo_square_x_icon_256075.png" alt="X">
+            <img src="images/LinkedIn_Rounded_Solid_icon-icons.webp" alt="Linkedn">
+            <img src="images/instagram_f_icon2-icons.webp" alt="instagram">-->
+            <p>
+            Powered by &copy; 2025 Next. Talent Agency. All rights reserved.
+            </p>
+    </footer>
+
+
+</body>
+</html>
