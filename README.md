@@ -36,7 +36,23 @@ environment are not included in this repository.
 
 The application dynamically loads talent records from the SQL database.
 
-![Database Output](images/db-results.png)
+![Database Integration](Loginpage.png)
+
+![Database Integration](LogoutpageAdded.png)
+
+![Database Integration](HomeWithDatabaseIntegration.png)
+
+![Database Integration](Insertpage.png)
+
+![Database Integration](Selectpage.png)
+
+![Database Integration](UpdatePage.png)
+
+![Database Integration](Deletepage.png)
+
+
+
+
 
 ## Architecture
 
